@@ -1,0 +1,465 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+
+  html, body {
+    height: 100%;
+  }
+  
+  body {
+    font-family: 'Metal Mania', cursive;
+    background: black;
+    color: aliceblue;
+    margin: 0;
+    padding: 0;
+  }
+  h1 {
+    box-shadow: 5px 5px 5px white;
+    padding: 40px; /* Adjust padding */
+    font-size: 80px;
+    text-align: center;
+    margin: 0;
+  }
+  .again {
+    font-family: 'Metal Mania', cursive;
+    font-size: 30px;
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    transform: translate(-50%, -50%);;
+    margin: 10px;
+  }
+
+.btwn {
+  font-size: 30px;
+  margin-left: 70%;
+  margin-bottom: 20%;
+}
+.guess {
+  width: 80%;
+  height: 40px;
+  font-size: 20px;
+  position: absolute;
+  top: 50%; /* Adjust vertical position */
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.check {
+  font-family: 'Metal Mania', cursive;
+  font-size: 30px;
+  height: 60px; /* Increase button height */
+  position: absolute;
+  bottom: 20%; /* Position below input box */
+  left: 50%;
+  transform: translateX(-50%);
+}
+.all {
+  text-align: center; 
+  font-size: 30px;
+  position: absolute; /* Position the div absolutely */
+  top: 80%; /* Move the top edge to the vertical plane */
+  left: 90%; /* Move the left edge to the horizontal plane */
+  transform: translate(-50%, -50%);
+}
+.number {
+  border: solid;
+  width: 100px;
+  height: 100px;
+  background-color: aliceblue;
+  color: black;
+  font-size: 80px;
+  text-align: center;
+  position: absolute; /* Position absolutely */
+  top: 35%; /* Move to the vertical plane */
+  left: 50%; /* Move to the horizontal plane */
+  transform: translate(-50%, -50%); /* Adjust for centering */
+}
+.start {
+  margin-top: 10px; /* Create space between inputs */
+}
+
+/* Star points styling */
+.dots span {
+  position: fixed;
+  bottom: -50px;
+  height: 3px; /* Adjust size */
+  width: 3px; /* Adjust size */
+  border-radius: 50%;
+  background-color: white;
+  opacity: 0;
+  animation: star-glow 5s linear infinite;
+}
+
+/* Star glow animation */
+@keyframes star-glow {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+/* Star positions and animation delays */
+.dots span:nth-child(1) {
+  left: 10%;
+  top: 20%;
+  animation-delay: 1s;
+}
+
+.dots span:nth-child(2) {
+  left: 20%;
+  top: 40%;
+  animation-delay: 2s;
+}
+
+.dots span:nth-child(3) {
+  left: 30%;
+  top: 60%;
+  animation-delay: 3s;
+}
+
+.dots span:nth-child(4) {
+  left: 40%;
+  top: 80%;
+  animation-delay: 4s;
+}
+
+.dots span:nth-child(5) {
+  left: 50%;
+  top: 10%;
+  animation-delay: 5s;
+}
+
+.dots span:nth-child(6) {
+  left: 60%;
+  top: 30%;
+  animation-delay: 6s;
+}
+
+.dots span:nth-child(7) {
+  left: 70%;
+  top: 50%;
+  animation-delay: 7s;
+}
+
+.dots span:nth-child(8) {
+  left: 80%;
+  top: 70%;
+  animation-delay: 8s;
+}
+
+.dots span:nth-child(9) {
+  left: 90%;
+  top: 90%;
+  animation-delay: 9s;
+}
+
+.dots span:nth-child(10) {
+  left: 15%;
+  top: 15%;
+  animation-delay: 1s;
+}
+
+.dots span:nth-child(11) {
+  left: 25%;
+  top: 35%;
+  animation-delay: 2s;
+}
+
+.dots span:nth-child(12) {
+  left: 35%;
+  top: 55%;
+  animation-delay: 3s;
+}
+
+.dots span:nth-child(13) {
+  left: 45%;
+  top: 75%;
+  animation-delay: 4s;
+}
+
+.dots span:nth-child(14) {
+  left: 55%;
+  top: 5%;
+  animation-delay: 5s;
+}
+
+.dots span:nth-child(15) {
+  left: 65%;
+  top: 25%;
+  animation-delay: 6s;
+}
+/* Continue spans 16 to 50 */
+.dots span:nth-child(16) {
+  left: 10%;
+  top: 20%;
+  animation-delay: 1s;
+}
+
+.dots span:nth-child(17) {
+  left: 20%;
+  top: 40%;
+  animation-delay: 2s;
+}
+
+.dots span:nth-child(18) {
+  left: 30%;
+  top: 60%;
+  animation-delay: 3s;
+}
+
+.dots span:nth-child(19) {
+  left: 40%;
+  top: 80%;
+  animation-delay: 4s;
+}
+
+.dots span:nth-child(20) {
+  left: 50%;
+  top: 10%;
+  animation-delay: 5s;
+}
+
+.dots span:nth-child(21) {
+  left: 60%;
+  top: 30%;
+  animation-delay: 6s;
+}
+
+.dots span:nth-child(22) {
+  left: 70%;
+  top: 50%;
+  animation-delay: 7s;
+}
+
+.dots span:nth-child(23) {
+  left: 80%;
+  top: 70%;
+  animation-delay: 8s;
+}
+
+.dots span:nth-child(24) {
+  left: 90%;
+  top: 90%;
+  animation-delay: 9s;
+}
+
+.dots span:nth-child(25) {
+  left: 15%;
+  top: 15%;
+  animation-delay: 1s;
+}
+
+.dots span:nth-child(26) {
+  left: 25%;
+  top: 35%;
+  animation-delay: 2s;
+}
+
+.dots span:nth-child(27) {
+  left: 35%;
+  top: 55%;
+  animation-delay: 3s;
+}
+
+.dots span:nth-child(28) {
+  left: 45%;
+  top: 75%;
+  animation-delay: 4s;
+}
+
+.dots span:nth-child(29) {
+  left: 55%;
+  top: 5%;
+  animation-delay: 5s;
+}
+
+.dots span:nth-child(30) {
+  left: 65%;
+  top: 25%;
+  animation-delay: 6s;
+}
+/* Continue spans 31 to 49 */
+.dots span:nth-child(31) {
+  left: 10%;
+  top: 20%;
+  animation-delay: 1s;
+}
+
+.dots span:nth-child(32) {
+  left: 20%;
+  top: 40%;
+  animation-delay: 2s;
+}
+
+.dots span:nth-child(33) {
+  left: 30%;
+  top: 60%;
+  animation-delay: 3s;
+}
+
+.dots span:nth-child(34) {
+  left: 40%;
+  top: 80%;
+  animation-delay: 4s;
+}
+
+.dots span:nth-child(35) {
+  left: 50%;
+  top: 10%;
+  animation-delay: 5s;
+}
+
+.dots span:nth-child(36) {
+  left: 60%;
+  top: 30%;
+  animation-delay: 6s;
+}
+
+.dots span:nth-child(37) {
+  left: 70%;
+  top: 50%;
+  animation-delay: 7s;
+}
+
+.dots span:nth-child(38) {
+  left: 80%;
+  top: 70%;
+  animation-delay: 8s;
+}
+
+.dots span:nth-child(39) {
+  left: 90%;
+  top: 90%;
+  animation-delay: 9s;
+}
+
+.dots span:nth-child(40) {
+  left: 15%;
+  top: 15%;
+  animation-delay: 1s;
+}
+
+.dots span:nth-child(41) {
+  left: 25%;
+  top: 35%;
+  animation-delay: 2s;
+}
+
+.dots span:nth-child(42) {
+  left: 35%;
+  top: 55%;
+  animation-delay: 3s;
+}
+
+.dots span:nth-child(43) {
+  left: 45%;
+  top: 75%;
+  animation-delay: 4s;
+}
+
+.dots span:nth-child(44) {
+  left: 55%;
+  top: 5%;
+  animation-delay: 5s;
+}
+
+.dots span:nth-child(45) {
+  left: 65%;
+  top: 25%;
+  animation-delay: 6s;
+}
+
+.dots span:nth-child(46) {
+  left: 75%;
+  top: 45%;
+  animation-delay: 7s;
+}
+
+.dots span:nth-child(47) {
+  left: 85%;
+  top: 65%;
+  animation-delay: 8s;
+}
+
+.dots span:nth-child(48) {
+  left: 95%;
+  top: 85%;
+  animation-delay: 9s;
+}
+
+.dots span:nth-child(49) {
+  left: 20%;
+  top: 30%;
+  animation-delay: 1s;
+}
+.dots span:nth-child(50) {
+  left: 95%;
+  top: 85%;
+  animation-delay: 9s;
+}
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 60px;
+    padding: 30px; /* Adjust padding */
+  }
+  .again {
+    font-family: 'Metal Mania', cursive;
+    font-size: 20px; /* Adjust font size */
+    position: absolute;
+    top: 0px;
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%);
+  }
+  .check {
+    font-size: 30px;
+    height: 60px; /* Adjust button height */
+  }
+
+  .dots span {
+    height: 2px; /* Adjust star size */
+    width: 2px; /* Adjust star size */
+  }
+}
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 40px;
+    padding: 15px;
+  }
+  .again {
+    font-size: 14px;
+    margin: 3px;
+  }
+
+  .check {
+    font-size: 25px;
+    height: 40px;
+  }
+
+  .dots span {
+    animation: star-glow 5s linear infinite;
+    animation-delay: calc(1s * var(--delay)); 
+  }
+}
+
+@media screen and (max-width: 320px) {
+  h1 {
+    font-size: 30px;
+    padding: 10px;
+  }
+  .again {
+    font-size: 10px;
+    margin: 2px;
+  }
+
+  .check {
+    font-size: 20px;
+    height: 30px;
+  }
+
+  .dots span {
+    animation: star-glow 5s linear infinite;
+    animation-delay: calc(1s * var(--delay)); 
+  }
+}
